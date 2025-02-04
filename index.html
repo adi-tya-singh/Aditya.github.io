@@ -456,6 +456,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     transform-style: preserve-3d;
     transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
 }
 
 .experience-content:hover {
@@ -825,7 +826,7 @@
         .image-container {
             position: relative;
             width: 100%;
-            height: 400px;
+            height: 360px;
             overflow: hidden;
             border-radius: 1.5rem 1.5rem 0 0;
         }
@@ -841,18 +842,18 @@
             transform: scale(1.1);
         }
 
-        .image-overlay {
+        /*.image-overlay {
             position: absolute;
             inset: 0;
             background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-        }
+        }*/
 
         .project-content {
             padding: 2rem;
         }
 
         .project-title {
-            font-size: 1.75rem;
+            font-size: 2rem;
             font-weight: bold;
             color: #1a1a1a;
             margin-bottom: 1.5rem;
@@ -881,6 +882,7 @@
             line-height: 1.8;
             margin-bottom: 2rem;
             font-size: 1.2rem;
+            text-align: justify;
         }
 
         .github-button-container {
@@ -1117,8 +1119,9 @@
         <h2>Hello, I'm</h2>
         <h2 id="name">Aditya Singh</h2>
         <p>
-            IoT and AI/ML Engineer with 4+ years of experience in IoT solutions, automation, and healthcare advancements.
-         Skilled in networking, IoT protocols, and system optimization, with a proven track record of delivering innovative projects.
+            IoT and AI/ML Engineer with 4.5+ years of experience in C++, embedded systems, 
+            and wireless communication. Skilled in Linux, Git, NVIDIA CUDA, and OpenCV for 
+            AI-driven automation. Expertise in sensor integration and real-time optimization for scalable IoT solutions. 🚀
         </p>
         <a href="#projects1" class="button">View My Work</a>
         <a href="#contact" class="button">Get In Touch</a>
@@ -1161,8 +1164,7 @@
                     <li>• TensorFlow</li>
                     <li>• Keras</li>
                     <li>• PyTorch</li>
-                    <li>• Scikit-learn</li>
-                    <li>• TensorFlow</li>
+                  
                     
                 </ul>
             </div>
@@ -1377,46 +1379,61 @@
     const projects = [
         {
             title: "CSI-Based Motion Tracking System",
-            image: "data.jpg",
+            image: "CSI.jpeg",
             keyPoints: ["93.9% accuracy", "Privacy-preserving", "Elderly care", "Theft prevention"],
             description: "Developed a Wi-Fi-based motion tracking system using CSI, achieving 93.9% accuracy for privacy-preserving elderly care and theft prevention. Implemented diagnostics and troubleshooting strategies to enhance system reliability and performance.",
             githubUrl: "#"
         },
         {
             title: "ECG - EDA Ring Sensor Enhancement",
-            image: "data.jpg",
+            image: "ring.jpg",
             keyPoints: ["25% ECG accuracy improvement", "Multi-sensor integration", "Real-time monitoring"],
             description: "Enhanced ECG accuracy by 25% and integrated multi-sensor functionality for emotion detection, motion, temperature, and SpO2 monitoring. Utilized networking fundamentals to optimize data transfer and device communication.",
             githubUrl: "#"
         },
         {
+            title: "Smart Home Automation",
+            image: "home.jpg",
+            keyPoints: ["Real-Time Status Updates", "Supports 5 Devices + 1 Continuous Control", " Time-Scheduled Control","ESP32 Mesh Network","Google Firebase Integration"],
+            description: "Smart home Automation using Esp32 mesh and time schedule control . It has 5 device control with one device continuous control like fan. Tested for 2+ years working using google firebase json http control to get fast response. It has physical and IOT both control available with status update in application using google firebase.",
+            githubUrl: "#"
+        },
+        {
             title: "Heart Stent Image Segmenting using Custom Encoder- Decorder Architecture",
-            image: "data.jpg",
+            image: "Heart Stent.jpeg",
             keyPoints: ["72% IoU Improvement", " heart stent quality detection", "Medical imaging analysis"],
             description: "Developed a custom encoder-decoder model for precise image segmentation, achieving a 72% IoU improvement, appliedinheartstent quality detection and medical imaging for object analysis.",
             githubUrl: "#"
         },
         {
             title: "Skin Impedance Analysis for Electroporation Drug Delivery",
-            image: "data.jpg",
+            image: "skin.jpg",
             keyPoints: ["ML-based analysis", "Personalized drug delivery", "Optimized electroporation"],
             description: "Utilized machine learning to analyze and visualize skin impedance data, optimizing electroporation drug delivery for personalizedtreatments.",
             githubUrl: "#"
         },
         {
             title: "Brabo Six-Axis Arm Robot",
-            image: "data.jpg",
+            image: "sixarm.jpg",
             keyPoints: ["Automated laser welding", "Improved manufacturing efficiency", " Industrial accuracy"],
             description: "Developed and implemented automation solutions using the Brabo six-axis robotic arm for precision laser weldingandcuttingapplications, enhancing efficiency and accuracy in industrial manufacturing processes.",
             githubUrl: "#"
         },
         {
             title: "Diamond Polishing Machine",
-            image: "data.jpg",
+            image: "polish1.jpg",
             keyPoints: ["IoT automation", "90%+ precision", "Raspberry Pi-driven polishing"],
             description: "An automated diamond polishing system using Raspberry Pi, stepper motors, and IoT control, designed to achievehigh-precisionfacets (4, 8, or 16) with over 90% accuracy in production.",
             githubUrl: "#"
-        }
+        },
+       
+        {
+            title: "Diamond Inclusion detection using 360 degree Image.",
+            image: "dimond-detact.jpg",
+            keyPoints: ["AI-Powered Inclusion Detection", "360° Imaging Analysis", " Enhanced Diamond Grading", " Non-Destructive Testing","Improved Transparency & Accuracy"],
+            description: "Diamond Inclusion Detection using 360° Imaging utilizes AI and deep learning to analyze high-resolution, multi-angle images, accurately identifying and classifying inclusions. This technology enhances precision in diamond grading, ensuring transparency and quality assessment for jewelers and gemologists.",
+            githubUrl: "#"
+        },
 
     ];
 
@@ -1466,7 +1483,7 @@
 <!-- ---------------------------projects ends ----------------------------- -->
     <section id="contact">
         <h1 id="footer-heading">Contact</h1>
-        <p>Feel free to connect with me on LinkedIn, GitHub, or send me an email for collaboration opportunities.</p>
+        <p>Feel free to connect with me on LinkedIn, GitHub, or send me an email, Thank you for taking the time to visit!</p>
         <a href="https://www.linkedin.com/in/aditya-singh-parmar-/" class="button-2">LinkedIn</a>
         <a href="https://github.com/adi-tya-singh" class="button-2">GitHub</a>
         <a href="mailto:parmaraditya4497@gmail.com" class="button-2">Email Me</a>
